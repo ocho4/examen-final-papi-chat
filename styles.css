@@ -1,0 +1,186 @@
+/* Global Styles */
+:root {
+    --primary-color: #4F3F84;
+    --secondary-color: #FF662A;
+    --tertiary-color: #FFA22A;
+    --text-color: #82AC26;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+    color: var(--tertiary-color);
+}
+
+.nav-link {
+    color: white;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--tertiary-color);
+}
+
+.login-btn {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem !important;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--tertiary-color);
+    padding: 8rem 0 4rem;
+    min-height: 100vh;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons .btn {
+    margin-right: 1rem;
+    padding: 0.75rem 2rem;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.btn-outline {
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+/* Services Section */
+.services {
+    background-color: white;
+    padding: 6rem 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.service-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Contact Section */
+.contact {
+    background-color: var(--secondary-color);
+    padding: 6rem 0;
+}
+
+.contact h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-label {
+    color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer h4 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--tertiary-color);
+}
+
+.app-badges img {
+    height: 40px;
+    margin-right: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 6rem 0 3rem;
+        text-align: center;
+    }
+
+    .hero img {
+        margin-top: 2rem;
+    }
+
+    .service-card {
+        margin-bottom: 2rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .social-links {
+        margin-top: 2rem;
+    }
+}
